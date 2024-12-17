@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="/">
 
   <meta charset="UTF-8">
@@ -29,10 +16,59 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>Code Life</title>
+  <title>Sanoop Das</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Set the background to black */
+    body {
+      background-color: black;
+      color: white; /* Set text color to white for contrast */
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style the loader */
+    .loader {
+  height: 50px;
+  aspect-ratio: 2;
+  border: 10px solid #000;
+  box-sizing: border-box;
+  background: 
+    radial-gradient(farthest-side,#fff 98%,#0000) left/20px 20px,
+    radial-gradient(farthest-side,#fff 98%,#0000) left/20px 20px,
+    radial-gradient(farthest-side,#fff 98%,#0000) center/20px 20px,
+    radial-gradient(farthest-side,#fff 98%,#0000) right/20px 20px,
+    #000;
+  background-repeat: no-repeat;
+  filter: blur(4px) contrast(10);
+  animation: l14 1s infinite;
+}
+@keyframes l14 {
+  100%  {background-position:right,left,center,right}
+}
+  </style>
 </head>
 <body>
+   <!-- Loader -->
+   <div class="loader"></div>
+  
+
+  <script>
+    // Remove loader after Flutter app is ready
+    window.addEventListener('flutter-first-frame', function () {
+      document.getElementById('loader').style.display = 'none';
+    });
+  </script>
+
+  <!-- Flutter app -->
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
+
+
+
