@@ -80903,7 +80903,7 @@ else q=q.pk((A.aj(a).ax.a===B.I?A.yN():A.yM()).r,12,B.l)
 B.b.E(m,A.a([A.oa(A.a([A.cS(r,o,o,q,B.hf,o)],s),B.G,B.aS,B.Y,o,B.A)],s))}return A.dI(m,n,B.X,B.Y,o,B.A)}}
 A.MR.prototype={
 lU(a,b){var s=A.aDt(B.yG),r=A.aDt(B.kv)
-return new A.uK($.aLX(),"Code Life",s,r,B.kv,!1,null)}}
+return new A.uK($.aLX(),"Sanoop Das",s,r,B.kv,!1,null)}}
 A.e2.prototype={
 j(a){return"SkillModel(id: "+A.j(this.a)+", name: "+A.j(this.b)+", svg: "+A.j(this.c)+")"},
 i(a,b){var s,r,q=this
